@@ -9,13 +9,14 @@
   font-family: Arial, Helvetica, sans-serif;
 
 }
-
+/* the following block of code is the css for the amount of sides animation text box*/
 .sides
 {
   width: 50%;
   position: relative;
   height: 50px;
   overflow:hidden;
+
 }
 .sides input
 {
@@ -70,6 +71,8 @@
 {
   transform: translateX(0%);
 }
+/* the following block of code is the css for the amount of dice animation text box*/
+
 .amount
 {
   width: 50%;
@@ -130,7 +133,7 @@
 {
   transform: translateX(0%);
 }
-
+/*this is for the nav bar on both index and howitworks*/
 .navBar ul
 {
   list-style-type: none;
@@ -148,6 +151,20 @@
   background-color: white;
   text-decoration: none;
 }
+.roll
+{
+  background-color: white;
+  border: 2px solid purple;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/*css for how it works*/
 .explaination
 {
   font-family: Arial, Helvetica, sans-serif;

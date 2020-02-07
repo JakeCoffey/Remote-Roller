@@ -2,7 +2,7 @@
 <head>
   <title>Remote Roller</title>
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript"src="/js/script.js"></script>
+
   <div class="navBar">
     <ul>
       <li><a href="index.html"> Home</a></li>
@@ -14,16 +14,46 @@
 
 <body>
   <div class="sides">
-    <input type="text" name="diSides" autocomplete="off" required />
-    <label for="diSides" class = "label-sides">
-        <span class = "content-sides"> amount of sides </span>
+    <input type="number"  id="di-Sides"name="diSides" autocomplete="off" required />
+    <label for="diSides"  class = "label-sides">
+        <span class = "content-sides"> Amount of sides </span>
     </label>
   </div>
   <div class="amount">
-    <input type="text" name="diAmount" autocomplete="off" required />
+    <input type="number" id="di-Amount"name="diAmount" autocomplete="off" required />
     <label for="diAmount" class = "label-amount">
-        <span class = "content-amount"> amount of dice </span>
+        <span class = "content-amount"> Amount of dice </span>
     </label>
   </div>
-</body>
+
+    <input type="button" type="submit" onclick="Diceroller();" name="roll" value="Roll!">
+      <script type="text/javascript">
+      function Diceroller() 
+      {
+
+
+
+        var sides =document.getElementById("di-Sides").value;
+        var amount = document.getElementById("di-Amount").value;
+        let counter =0;
+        var rolls =[];
+        let test=0;
+        var results
+
+      
+        
+        while (counter < amount)
+        {
+          results = Math.floor(Math.random() * sides )+ 1 ;
+          rolls.push(results);
+          counter++;
+          
+        }
+        alert(rolls);
+         
+
+      }
+      </script>
+   </body>
 </div>
+
