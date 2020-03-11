@@ -2,6 +2,7 @@
 <head>
   <title>Remote Roller</title>
   <link rel="stylesheet" href="Resources/style.css">
+ <script src="Randomize.js"></script>
 
   <div class="navBar">
     <ul>
@@ -13,6 +14,7 @@
 <div class="indexbody">
 
 <body>
+  <script src="Randomize.js"></script>
   <div class="sides">
     <input type="number"  id="di-Sides"name="diSides" autocomplete="off" required />
     <label for="diSides"  class = "label-sides">
@@ -27,33 +29,6 @@
   </div>
 
     <input type="button" type="submit" onclick="Diceroller();" name="roll" value="Roll!">
-      <script type="text/javascript">
-      function Diceroller() 
-      {
-
-
-
-        var sides =document.getElementById("di-Sides").value;
-        var amount = document.getElementById("di-Amount").value;
-        let counter =0;
-        var rolls =[];
-        let test=0;
-        var results
-
-      
-        
-        while (counter < amount)
-        {
-          results = Math.floor(Math.random() * sides )+ 1 ;
-          rolls.push(results);
-          counter++;
-          
-        }
-        alert(rolls);
-         
-
-      }
-      </script>
    </body>
 </div>
 

@@ -22,7 +22,7 @@
 {
   width: 100%;
   height: 100%;
-  color: purple;
+  color: black;
   padding-top: 10px;
   border: none;
   outline: none;
@@ -47,7 +47,7 @@
   bottom: -1px;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid purple;
+  border-bottom: 3px solid green;
   transform: translateX(-100%);
  transition: transform 0.3s ease;
 
@@ -84,7 +84,7 @@
 {
   width: 100%;
   height: 100%;
-  color: purple;
+  color: black;
   padding-top: 10px;
   border: none;
   outline: none;
@@ -109,7 +109,7 @@
   bottom: -1px;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid purple;
+  border-bottom: 3px solid green;
   transform: translateX(-100%);
  transition: transform 0.3s ease;
 
@@ -154,8 +154,8 @@
 .roll
 {
   background-color: white;
-  border: 2px solid purple;
-  color: black;
+  border: 2px solid green;
+  color: green;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -176,7 +176,9 @@
 }
 .explaination p
 {
-  text-align: justify;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .Why
 {
@@ -185,4 +187,20 @@
 .Why h2
 {
   text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Why p
+{
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+.Why ul
+{
+  
+  padding-left:46%;
+  
 }
